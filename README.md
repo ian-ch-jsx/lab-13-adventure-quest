@@ -17,9 +17,10 @@
     * redirect to map
 
 ## Map
-**HTM**
+**HTML**
 * List of links
     * only clickable if user has not completed quest
+    * should contain a URL search parameter containing the quest ID
 
 **GAME LOGIC**
 * TBD
@@ -36,17 +37,8 @@
 * Page load
     * dynamically generate quest content
 * formSubmit
-    * update the user object
+    * update the user data in localStorage
     * redirect
-
-
-
-## Events
-
-
-## CSS
-
-## HTML
 
 ---
 ---

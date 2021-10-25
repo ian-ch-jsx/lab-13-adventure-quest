@@ -1,8 +1,6 @@
-// import functions and grab DOM elements
 
-// initialize global state
+//On form submit
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+// create FormData object
+// pass it to generateUser function
+// save it to localStorage
