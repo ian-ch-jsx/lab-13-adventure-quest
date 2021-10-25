@@ -1,6 +1,12 @@
+import { setUser, generateUser } from './utils.js';
 
-//On form submit
+const userForm = document.getElementById('user-form');
 
-// create FormData object
-// pass it to generateUser function
-// save it to localStorage
+userForm.addEventListener('submit', (e)=>{
+    e.preventDefault();
+    const formData = new FormData(userForm);
+    const userObj = generateUser(formData);
+  
+    setUser(userObj);
+    window.location.replace('./map');
+});
