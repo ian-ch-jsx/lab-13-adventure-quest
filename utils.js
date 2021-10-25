@@ -1,4 +1,5 @@
 
+
 export function generateUser(formData){
     return {
         completed:{},
@@ -7,4 +8,9 @@ export function generateUser(formData){
         name: formData.get('name'),
         class: formData.get('class')
     };
+}
+
+export function setUser(userObject){
+    const userString = JSON.stringify(userObject);
+    localStorage.setItem('USER', userString);
 }
