@@ -1,6 +1,3 @@
-// quests[0].choices[0].description; ==> 'negotiate with them'
-
-
 const monsters = {
     id: 'monsters',
     title: 'A Den of Monsters',

@@ -18,9 +18,9 @@
 
 ## Map
 **HTML**
-* List of links
+* ~~List of links~~
     * only clickable if user has not completed quest
-    * should contain a URL search parameter containing the quest ID
+    * ~~should contain a URL search parameter containing the quest ID~~
 
 **GAME LOGIC**
 * TBD
