@@ -1,25 +1,76 @@
-# Alchemy Bootstrap Template
-
-## Making a plan
-
-(bolded steps are mandatory, unbolded are for more advanced projects)
-
-1) **Make a drawing of your app. Simple "wireframes"**
-2) **Once you have a drawing, name the HTML elements you'll need to realize your vision**
-3) **For each HTML element ask: Why do I need this?**
-4) Ask which of out HTML elements are hard coded, and which are dynamically generated?
-5) **Once we know _why_ we need each element, think about how to implement the "Why" as a "How"**
-6) Is there some state we need to initialize?
-7) **Find all the 'events' (user clicks, form submit, on load etc) in your app. Ask one by one, "What happens when" for each of these events. Does any state change?**
-8) **Think about how to validate each of your steps**
-9) Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
-10) Consider your data model. What objects will you be using? What are the key/value pairs? What arrays do you need? What needs to live in local storage?
-11) **Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.**
+# Adventure Quest
+## Plan
+* ! ! Test ALL the things ! !
+* Create HTML/CSS shell
 
 
-## To Run Cypress Tests
-* `npm install`
-* `npm test`
-* Cypress will open -- you should then click "run <#> integration spec(s)"
-    ![](cypress.png)
-* Make sure all tests pass
+## Front page
+**HTML**
+* name input
+* character type radio buttons
+* submit button
+
+**EVENTS**
+* formSubmit
+    * generate user object
+    * store user object in LS
+    * redirect to map
+
+## Map
+**HTM**
+* List of links
+    * only clickable if user has not completed quest
+
+**GAME LOGIC**
+* TBD
+
+## Quest details
+**HTML**
+* Quest title
+* Image
+* Storyline paragraph
+* Radio button choices
+* Submit button
+
+**EVENTS**
+* Page load
+    * dynamically generate quest content
+* formSubmit
+    * update the user object
+    * redirect
+
+
+
+## Events
+
+
+## CSS
+
+## HTML
+
+---
+---
+---
+
+## Notes
+URL SEARCH PARAMETERS
+* displays new content without creating a new page.
+
+
+### Points Break Down
+* A user should be able to enter their name and pick a character
+* A user's data should be stored in local storage and displayed on the page
+* A user should be presented with a list of quests and links to each unique quest page
+* A user should be able to visit a unique quest pages based on a URL query parameter
+* A user should be presented with a list of options to pick from on the quest detail page
+
+Looking For | Points (10)
+:--|--:
+Hosted on GitHub with URL in About section | 1
+Meta Data: 3 or more quests plus user choices | 1
+Home Page: Collect User Information | 1
+Storage Functions: TDD Functions to create User and store User in Local Storage | 2
+Map Page / Quest List: List of Quests using URLSearchParam links | 2
+Quest Detail Page uses query id to load correct data | 1
+Quest Detail Page: Shows quest information (images, description) | 1
+Quest Detail Page: Presents Quest Choices | 1
