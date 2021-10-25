@@ -6,15 +6,15 @@
 
 ## Front page
 **HTML**
-* name input
-* character type radio buttons
-* submit button
+* ~~name input~~
+* ~~character type radio buttons~~
+* ~~submit button~~
 
 **EVENTS**
-* formSubmit
-    * generate user object
-    * store user object in LS
-    * redirect to map
+* ~~formSubmit~~
+    * ~~generate user object~~
+    * ~~store user object in LS~~
+    * ~~redirect to map~~
 
 ## Map
 **HTML**

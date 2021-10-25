@@ -1,6 +1,7 @@
 import { setUser, generateUser } from './utils.js';
 
 const userForm = document.getElementById('user-form');
+const submitBtn = document.getElementById('submit');
 
 userForm.addEventListener('submit', (e)=>{
     e.preventDefault();
