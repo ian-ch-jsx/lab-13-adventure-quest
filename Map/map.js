@@ -1,5 +1,6 @@
 // import quest data
-import { quests } from '../data/quest-data.js';
+import quests from '../data/quest-data.js';
+console.log(quests);
 // get map-links element
 const mapLinks = document.getElementById('map-links');
 // loop through each quest
