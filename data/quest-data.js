@@ -1,6 +1,6 @@
 const waterHorse = {
     id: 'waterHorse',
-    title: 'Each-uisge',
+    title: 'Something in the water',
     map: {
         top: '89%',
         left: '44%'
@@ -80,7 +80,7 @@ const blackDog = {
         sanity: -35,
         evidence: 15
     }, {
-        id: 'fight',
+        id: 'observe',
         description: 'Enjoy the spectacle',
         result: `
             The sudden crashing startles you, causing you to stumble backwards a few steps before you process the 
@@ -91,7 +91,7 @@ const blackDog = {
         sanity: -45,
         evidence: 0
     }, {
-        id: 'archer',
+        id: 'call',
         description: 'Call the dog over',
         result: `
             "Hey!" you exclaim, stepping forward and clapping your hands together in an attempt to break the 
@@ -110,7 +110,7 @@ const blackDog = {
 
 const doppelganger = {
     id: 'treasure',
-    title: 'A evidenceen Treasure',
+    title: `We've always been here`,
     map: {
         top: '31%',
         left: '5%'
@@ -120,28 +120,46 @@ const doppelganger = {
     audio: 'treasure-chests.wav',
     action: 'chest-opening.wav',
     description: `
-        As you enter the quest chamber you notice three chests before you.
-        Just as you start to imagine the wealth, you see a giant serpent
-        emerge from the back of the chamber. You'll need to make a run for it,
-        but you have time to open one chest before you take off. Which one 
-        do you choose?
+        "Goodnight!" Your parents shut their bedroom door as you walk down the stairs and plop down on the
+        couch, pressing the play button on your favorite Twilight Zone episode. When the episode ends, you 
+        hear a car pull into the driveway. You peer through the blinds and see your parents closing up the
+        car and heading towards the front door. 
     `,
     choices: [{
-        id: 'wooden',
-        description: 'A Wooden Chest',
-        result: 'You grab 40 evidence pieces!',
+        id: 'outside',
+        description: 'Leave the house',
+        result:  `
+       Your heart drops. The floorboards upstairs creak, and without a second glance, you bolt out the front 
+       door, slamming it shut behind you. "There's someone in the house!" you exclaim, "You're in the-" you stop
+       yourself, knowing they wouldn't believe you. You rush them down the driveway, and convince them to call
+       the police. They find nothing. You must have had some weird dream falling asleep watching that show.
+    `,
         sanity: 0,
         evidence: 40
     }, {
-        id: 'evidenceen',
-        description: 'A evidenceen Chest',
-        result: 'Oh no! The chest is booby trapped with poison and you take 50 sanity damage',
+        id: 'lock',
+        description: 'Lock the door',
+        result: `
+                "Will you turn the TV down?" your mother's voice from upstairs calls out as you sprint to the front
+                door, fumbling to lock the deadbolt and security chain. "...Mom?" your voice quivers. There's no reply.
+                "Dad? Are you in here?" They've heard the fear in your voice. You look to the staircase. Two shadowy figures
+                stand at the top of the stairwell, engulfing everything behind them in black. They are nothing but humanoid
+                shape and glowing eyes. As they move toward you, your vision blurs, and your breath leaves you like a 
+                punch to the stomach. Everything is black.
+                `,
         sanity: -50,
         evidence: 0
     }, {
-        id: 'jeweled',
-        description: 'A Jeweled Chest',
-        result: 'A warm light engulfs you and you gain 35 sanity',
+        id: 'upstairs',
+        description: 'Run upstairs',
+        result: `
+        "What the hell..?" you rush up the stairs, looking frantically down the hall to your parents' bedroom door. 
+        It's open, and the lights are out. The front door opens. The hair on the back of your neck rises as you step
+        slowly down the first few stairs. When you look down, your parents are standing at the bottom of the stairs,
+        eyes wide with fear. Your mother screams, and your dad tells you to run. You don't look back until you're 
+        slamming the front door shut behind you. You see an image of your parents shifting into looming black shadows.
+        Your family will never forget those glowing vacant eyes.
+        `,
         sanity: 35,
         evidence: 0
     }]

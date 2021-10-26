@@ -1,4 +1,4 @@
-import { generateUser, setUser, getUser, scoreQuest } from '../utils.js';
+import { generateUser, setUser } from '../utils.js';
 
 const test = QUnit.test;
 
