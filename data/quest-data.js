@@ -20,16 +20,16 @@ const waterHorse = {
         result: `
             haha ur gonna get rekt.
         `,
-        hp: 0,
-        gold: 35
+        sanity: 0,
+        evidence: 35
     }, {
         id: 'leave',
         description: 'Keep walking',
         result: `
             better idea.
         `,
-        hp: -30,
-        gold: 50
+        sanity: -30,
+        evidence: 50
     }, {
         id: 'photo',
         description: 'Take a photo',
@@ -37,8 +37,8 @@ const waterHorse = {
             idk hes like a vampire its not gonna show up and its gonna make u a lil
             crazy lol.
         `,
-        hp: -50,
-        gold: 0
+        sanity: -50,
+        evidence: 0
     }]
 };
 
@@ -63,12 +63,12 @@ const blackDog = {
         description: 'Get the hell out of the village',
         result: `
             You high tail it in the opposite direction. Luckily,
-            in the panic you find a bag on the ground with 15 gold.
+            in the panic you find a bag on the ground with 15 evidence.
             Unluckily, you trip over a discarded wagon wheel on your
-            way out of town and take 40 hp damage. 
+            way out of town and take 40 sanity damage. 
         `,
-        hp: -35,
-        gold: 15
+        sanity: -35,
+        evidence: 15
     }, {
         id: 'fight',
         description: 'Fiiiiiggghhhttt!',
@@ -76,10 +76,10 @@ const blackDog = {
             You attempt to charge towards the dragon, who sees you approach
             and let's loose a fireball. You wake up the next morning and the
             village has been completely burned to the ground.
-            Oh, and you take 45 hp damage.
+            Oh, and you take 45 sanity damage.
         `,
-        hp: -45,
-        gold: 0
+        sanity: -45,
+        evidence: 0
     }, {
         id: 'archer',
         description: 'Emulate that guy from LOR who shot an arrow',
@@ -90,16 +90,16 @@ const blackDog = {
             next pass you steady your aim and let one fly. Amazingly,
             you strike the dragon in the eye, piercing into the brain and
             killing the dragon instantly. The villagers declare you their hero
-            and award you 90 gold.
+            and award you 90 evidence.
         `,
-        hp: 0,
-        gold: 90
+        sanity: 0,
+        evidence: 90
     }]
 };
 
 const doppelganger = {
     id: 'treasure',
-    title: 'A Golden Treasure',
+    title: 'A evidenceen Treasure',
     map: {
         top: '31%',
         left: '5%'
@@ -118,21 +118,21 @@ const doppelganger = {
     choices: [{
         id: 'wooden',
         description: 'A Wooden Chest',
-        result: 'You grab 40 gold pieces!',
-        hp: 0,
-        gold: 40
+        result: 'You grab 40 evidence pieces!',
+        sanity: 0,
+        evidence: 40
     }, {
-        id: 'golden',
-        description: 'A Golden Chest',
-        result: 'Oh no! The chest is booby trapped with poison and you take 50 hp damage',
-        hp: -50,
-        gold: 0
+        id: 'evidenceen',
+        description: 'A evidenceen Chest',
+        result: 'Oh no! The chest is booby trapped with poison and you take 50 sanity damage',
+        sanity: -50,
+        evidence: 0
     }, {
         id: 'jeweled',
         description: 'A Jeweled Chest',
-        result: 'A warm light engulfs you and you gain 35 hp',
-        hp: 35,
-        gold: 0
+        result: 'A warm light engulfs you and you gain 35 sanity',
+        sanity: 35,
+        evidence: 0
     }]
 };
 
