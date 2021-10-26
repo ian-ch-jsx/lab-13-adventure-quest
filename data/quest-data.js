@@ -5,7 +5,7 @@ const waterHorse = {
         top: '89%',
         left: '44%'
     },
-    image: 'monsters.jpg',
+    image: '../assets/waterhorse.jpg',
     description: `
         On a brisk autumn evening, you decide to take a short hike along the creek. You lose
         yourself observing the birds in the red-orange leaves, and before you know it, the
@@ -49,7 +49,7 @@ const blackDog = {
         top: '17%',
         left: '37%'
     },
-    image: 'dragon.jpg',
+    image: '../assets/blackdog.jpg',
     audio: 'dragon.wav',
     action: 'dragon-growl.aiff',
     description: `
@@ -105,7 +105,7 @@ const doppelganger = {
         left: '5%'
     },
     prerequisites: ['dragon', 'monsters'],
-    image: 'treasure-chests.png',
+    image: '../assets/doppelganger.jpg',
     audio: 'treasure-chests.wav',
     action: 'chest-opening.wav',
     description: `

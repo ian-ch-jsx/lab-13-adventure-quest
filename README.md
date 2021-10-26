@@ -1,7 +1,8 @@
 # Adventure Quest
 ## Plan
-1. Display proper quest information on quest pages
+1. ~~Display proper quest information on quest pages~~
 2. Display quest choices
+3. complete metadata
 3. **submit first half**
 
 
