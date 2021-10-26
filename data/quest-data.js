@@ -18,7 +18,13 @@ const waterHorse = {
         id: 'approach',
         description: 'Approach the horse',
         result: `
-            haha ur gonna get rekt.
+            You lock eyes with the horse, feeling strangely drawn to it. You slowly move forward,
+            stepping carefully across the rocky creek-side. As you raise your hand, the horse stretches
+            his neck forward, touching his nose to the back of your hand. When you brush your fingers 
+            through his long mane, the hair starts to slither forward like a snake, coiling up your arms
+            and wrapping around your body faster than you can think to scream. By the time you do, the 
+            sound is replaced with a choking gasp as you're dragged underwater with the beast, never to be
+            seen again.
         `,
         sanity: 0,
         evidence: 35
@@ -26,7 +32,9 @@ const waterHorse = {
         id: 'leave',
         description: 'Keep walking',
         result: `
-            better idea.
+            Something feels... wrong. The hair on the back of your neck rises, and your stomach jitters
+            as though it was filled with moths. You start to walk away slowly, fighting the urge to sprint
+            as long as you possibly can (it isn't long). You bolt down the trail and never look back.
         `,
         sanity: -30,
         evidence: 50
@@ -34,8 +42,10 @@ const waterHorse = {
         id: 'photo',
         description: 'Take a photo',
         result: `
-            idk hes like a vampire its not gonna show up and its gonna make u a lil
-            crazy lol.
+            This presence is concerning. You can't imagine where this horse has come from, but assume someone
+            must be looking for it. You pull your phone from your pocket and attempt to take a decent photo,
+            but when you check the screen, nothing but the creek and brush appears. You take another. Nothing.
+            Again. When you look up from the screen, your stomach knots; there's nothing there.
         `,
         sanity: -50,
         evidence: 0

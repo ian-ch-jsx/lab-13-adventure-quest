@@ -45,8 +45,7 @@ questChoices.addEventListener('submit', (e)=>{
     const questResults = document.getElementById('quest-results');
     const resultsP = document.createElement('p');
     resultsP.textContent = choice.result;
-    // console.log(choice.result);
 
     questResults.append(resultsP);
     questResults.classList.remove('hidden');
-});
+});                          
