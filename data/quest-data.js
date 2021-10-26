@@ -1,50 +1,49 @@
-const monsters = {
-    id: 'monsters',
-    title: 'A Den of Monsters',
+const waterHorse = {
+    id: 'waterHorse',
+    title: 'Each-uisge',
     map: {
         top: '89%',
         left: '44%'
     },
     image: 'monsters.jpg',
     description: `
-        You enter the quest chamber only to be confronted by a hoard of
-        monsters. And they look hungry. What do you do?
+        On a brisk autumn evening, you decide to take a short hike along the creek. You lose
+        yourself observing the birds in the red-orange leaves, and before you know it, the
+        evening is fading to night. Luckily, the route home is familiar, but along the way,
+        you hear something wading through the water beside you. When you turn your eyes to 
+        look, you see a large black horse. His coat, dripping wet, glistens like silver
+        through the trees and brush.
     `,
     choices: [{
-        id: 'negotiate',
-        description: 'Negotiate with them',
+        id: 'approach',
+        description: 'Approach the horse',
         result: `
-            Knowing the monsters are not too bright, you offer to go buy them all
-            turkey dinners from the village pub. They give you 35 gold for meals
-            that will never be delivered. I hope you can live with yourself. 
+            haha ur gonna get rekt.
         `,
         hp: 0,
         gold: 35
     }, {
-        id: 'fight',
-        description: 'Fiiiiiggghhhttt!',
+        id: 'leave',
+        description: 'Keep walking',
         result: `
-            Brandishing your sword you let out a warrior's cry and charge into the monsters
-            hacking and slashing. Before long you stand panting gazing across the bodies of
-            your vanquished foes. The bad news is you take 30 hp damage. The good news is you
-            find 50 gold.
+            better idea.
         `,
         hp: -30,
         gold: 50
     }, {
-        id: 'run',
-        description: 'Run away like good Sir Robin',
+        id: 'photo',
+        description: 'Take a photo',
         result: `
-            As you make a dash for the door a giant spider descends and take a bite of flesh,
-            causing 50 hp damage.
+            idk hes like a vampire its not gonna show up and its gonna make u a lil
+            crazy lol.
         `,
         hp: -50,
         gold: 0
     }]
 };
 
-const dragon = {
-    id: 'dragon',
+const blackDog = {
+    id: 'blackDog',
     title: 'A HAIRY!!! Dragon',
     map: {
         top: '17%',
@@ -98,7 +97,7 @@ const dragon = {
     }]
 };
 
-const treasure = {
+const doppelganger = {
     id: 'treasure',
     title: 'A Golden Treasure',
     map: {
@@ -138,9 +137,9 @@ const treasure = {
 };
 
 const quests = [
-    monsters, 
-    treasure,
-    dragon,
+    waterHorse, 
+    blackDog,
+    doppelganger,
 ];
 
 export default quests; 
