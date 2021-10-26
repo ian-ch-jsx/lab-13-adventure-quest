@@ -54,7 +54,7 @@ const waterHorse = {
 
 const blackDog = {
     id: 'blackDog',
-    title: 'A HAIRY!!! Dragon',
+    title: 'The Black Dog',
     map: {
         top: '17%',
         left: '37%'
@@ -63,44 +63,45 @@ const blackDog = {
     audio: 'dragon.wav',
     action: 'dragon-growl.aiff',
     description: `
-        You run to a nearby village you have heard is being
-        terrorized by a dragon. Sure enough as you rent a room
-        in a local inn, you go outside and see the dragon about
-        to lay seige! What do you do?
+        After a late night at the bar, you've found yourself with a dead phone battery,
+        stuck wobbling home on foot. You turn down the alley you <i>think</i> is the shortcut
+        home. Seconds later, a garbage can topples -- a large raccoon is sprinting frantically down the alley
+        with a large, lanky black dog hot on his heels.
     `,
     choices: [{
-        id: 'run',
-        description: 'Get the hell out of the village',
+        id: 'scold',
+        description: 'Scold the dog',
         result: `
-            You high tail it in the opposite direction. Luckily,
-            in the panic you find a bag on the ground with 15 evidence.
-            Unluckily, you trip over a discarded wagon wheel on your
-            way out of town and take 40 sanity damage. 
+            You take pity on the raccoon, and loudly exclaim "No! Knock it off!" The dog stops dead in
+            his tracks before slowly and silently turning to face you head on. In the blink of an eye,
+            the dog is lunging straight towards you. His glowing white eyes and yellowed fangs, dripping with 
+            frothy saliva, are the last things you see before it all goes dark.
         `,
         sanity: -35,
         evidence: 15
     }, {
         id: 'fight',
-        description: 'Fiiiiiggghhhttt!',
+        description: 'Enjoy the spectacle',
         result: `
-            You attempt to charge towards the dragon, who sees you approach
-            and let's loose a fireball. You wake up the next morning and the
-            village has been completely burned to the ground.
-            Oh, and you take 45 sanity damage.
+            The sudden crashing startles you, causing you to stumble backwards a few steps before you process the 
+            situation. Good riddance. You doubt the dog will catch up to the raccoon, but hope he'll scare them out
+            of showing up again and making a mess of the trash - an all-too-common occurrence. The animals disappear 
+            around a corner, and your body relaxes, no longer prepared to flee.
         `,
         sanity: -45,
         evidence: 0
     }, {
         id: 'archer',
-        description: 'Emulate that guy from LOR who shot an arrow',
+        description: 'Call the dog over',
         result: `
-            Inspired by the legend of Bard the Bowman, you notice a
-            stunned archer standing nearby and take their bow and quiver,
-            climb to the top of a tall tower and take aim. On the dragon's
-            next pass you steady your aim and let one fly. Amazingly,
-            you strike the dragon in the eye, piercing into the brain and
-            killing the dragon instantly. The villagers declare you their hero
-            and award you 90 evidence.
+            "Hey!" you exclaim, stepping forward and clapping your hands together in an attempt to break the 
+            dog's focus. The dog stops, turning his gaze to you. "It's okay, buddy," you say, softly, holding 
+            your hand out slightly. You notice the greasy, tangled appearance of his coat and his emaciated,
+            skeletal frame. The dog looks ready to flee, so you reach to your pocket for your phone, hoping
+            to snap a quick photo before he runs off. As you snap the photo, the dog's lips curl into a toothy
+            grin, revealing a line of teeth stretching all the way to the base of his neck. You gasp in shock,
+            and before you can run, the dog has disappeared. The image is blurred, but the photo is enough for
+            you to believe what you saw.
         `,
         sanity: 0,
         evidence: 90
