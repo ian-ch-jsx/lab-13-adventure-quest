@@ -48,4 +48,4 @@ questChoices.addEventListener('submit', (e)=>{
 
     questResults.append(resultsP);
     questResults.classList.remove('hidden');
-});                          
+});

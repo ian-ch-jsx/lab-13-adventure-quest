@@ -1,1 +1,36 @@
-/* add home page styles here */
+
+body {
+    background-color: #111111;
+    color: #fefefe;
+    font-family: 'raleway', sans-serif;
+}
+
+#home-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    text-align: center;
+}
+
+input {
+    margin: 10px;
+    border-radius: 15px;
+    padding: 5px;
+    border: 0px;
+}
+
+button {
+    font-family: 'raleway', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 10px;
+    border-radius: 20px;
+    border: 0px;
+    padding: 10px;
+    background-color: #839791;
+    color: #121212;
+}
+
+legend {
+    margin: 20px;
+}

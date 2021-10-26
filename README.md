@@ -55,7 +55,7 @@
 
 ## part one
 * Hosted on GitHub with URL in About section
-* Meta Data: 3 or more quests plus user choices
+* ~~Meta Data: 3 or more quests plus user choices~~
 * ~~Home Page: Collect User Information~~
 * ~~Storage Functions: TDD Functions to create User and store User in Local Storage~~
 * ~~Map Page / Quest List: List of Quests using URLSearchParam links~~

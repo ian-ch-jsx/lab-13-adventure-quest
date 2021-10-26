@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
@@ -15,31 +17,33 @@
 </head>
 
 <body>
-    <form id="user-form">
-        <label for="name">
-            Your Name:
-            <input type="text">
-        </label>
-        <legend>Pick Your Class:</legend>
-        <p id="avatars">
-            <label>
-                <input type="radio" name="class" required value="medium">
-                <img src="medium.png">
-                The Medium
+    <div id="home-container">
+        <form id="user-form">
+            <label for="name">
+                Your Name:<br>
+                <input type="text">
             </label>
-            <label>
-                <input type="radio" name="class" required value="mercenary">
-                <img src="mercenary.png">
-                The Mercenary
-            </label>
-            <label>
-                <input type="radio" name="class" required value="scientist">
-                <img src="scientist.png">
-                The Scientist
-            </label>
-        </p>
-        <button id="submit">start your adventure</button>
-    </form>
+            <legend>Pick Your Class:</legend>
+            <p id="avatars">
+                <label>
+                    <input type="radio" name="class" required value="skeptic">
+                    <img src="skeptic.png">
+                    The Skeptic
+                </label>
+                <label>
+                    <input type="radio" name="class" required value="zoologist">
+                    <img src="zoologist.png">
+                    The Cryptozoologist
+                </label>
+                <label>
+                    <input type="radio" name="class" required value="empath">
+                    <img src="empath.png">
+                    The Empath
+                </label>
+            </p>
+            <button id="submit">start your adventure</button>
+        </form>
+    </div>
     <script type="module" src="./app.js"></script>
 </body>
 
