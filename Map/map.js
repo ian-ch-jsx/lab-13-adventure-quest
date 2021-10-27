@@ -18,6 +18,14 @@ const mapLinks = document.getElementById('map-links');
 
 const user = getUser();
 
+for (let quest of quests){
+    if (user.completed[quest.id]){
+        displaySpan(quest);
+    } else {
+        displayLink(quest);
+    }
+}
+
 function displayLink(quest){
     const a = document.createElement('a');
     a.href = `../quests/?id=${quest.id}`;
@@ -29,14 +37,5 @@ function displayLink(quest){
 function displaySpan(quest){
     const span = document.createElement('span');
     span.textContent = quest.title + ': completed';
-    mapLinks.appendChild('span');
-}
-
-
-for (let quest of quests){
-    if (user.completed[quest.id]){
-        displaySpan(quest);
-    } else {
-        displayLink(quest);
-    }
+    mapLinks.appendChild(span);
 }

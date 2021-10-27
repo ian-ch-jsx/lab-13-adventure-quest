@@ -4,7 +4,7 @@ export function loadProfile() {
     const user = getUser();
 
     const img = document.getElementById('user-image');
-    img.src = `../assets/${user.class}`;
+    img.src = `../assets/${user.class}.png`;
 
     const name = document.getElementById('name');
     name.textContent = 'Name: ' + user.name;
