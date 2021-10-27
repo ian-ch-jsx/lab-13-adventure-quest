@@ -1,4 +1,4 @@
-import { generateUser, setUser } from '../utils.js';
+import { generateUser, setUser, getUser } from '../utils.js';
 
 const test = QUnit.test;
 
@@ -38,8 +38,23 @@ test('setUser should save user to localStorage', (expect)=>{
     expect.deepEqual(actual, userObject);
 });
 
-// test setUser
+test('getUser should retrieve user info from localStorage', (expect)=>{
+    localStorage.removeItem('USER');
 
+    const userObject = {
+        completed:{},
+        evidence: 0,
+        sanity: 40,
+        name: 'Ian',
+        class: 'ghost hunter',
+    };
+
+    setUser(userObject);
+
+    const actual = getUser();
+
+    expect.deepEqual(userObject, actual);
+});
 // test('scoreQuest should update sanity, evidence, and completed on the userObject', (expect)=>{
 //     const userObject = {
 //         completed:{},
@@ -59,4 +74,4 @@ test('setUser should save user to localStorage', (expect)=>{
 //     expect.equal(userObject.hp, 0234234);
 //     expect.equal(userObject.gold 544234);
 //     expect.equal(userObject.completed[questID], true)
-// });
+// }
