@@ -26,8 +26,8 @@ const waterHorse = {
             sound is replaced with a choking gasp as you're dragged underwater with the beast, never to be
             seen again.
         `,
-        sanity: 0,
-        evidence: 35
+        sanity: -40,
+        evidence: 0
     }, {
         id: 'leave',
         description: 'Keep walking',
@@ -36,8 +36,8 @@ const waterHorse = {
             as though it was filled with moths. You start to walk away slowly, fighting the urge to sprint
             as long as you possibly can (it isn't long). You bolt down the trail and never look back.
         `,
-        sanity: -30,
-        evidence: 50
+        sanity: 0,
+        evidence: 0
     }, {
         id: 'photo',
         description: 'Take a photo',
@@ -47,7 +47,7 @@ const waterHorse = {
             but when you check the screen, nothing but the creek and brush appears. You take another. Nothing.
             Again. When you look up from the screen, your stomach knots; there's nothing there.
         `,
-        sanity: -50,
+        sanity: -15,
         evidence: 0
     }]
 };
@@ -60,8 +60,6 @@ const blackDog = {
         left: '37%'
     },
     image: '../assets/blackdog.jpg',
-    audio: 'dragon.wav',
-    action: 'dragon-growl.aiff',
     description: `
         After a late night at the bar, you've found yourself with a dead phone battery,
         stuck wobbling home on foot. You turn down the alley you <i>think</i> is the shortcut
@@ -77,8 +75,8 @@ const blackDog = {
             the dog is lunging straight towards you. His glowing white eyes and yellowed fangs, dripping with 
             frothy saliva, are the last things you see before it all goes dark.
         `,
-        sanity: -35,
-        evidence: 15
+        sanity: -40,
+        evidence: 0
     }, {
         id: 'observe',
         description: 'Enjoy the spectacle',
@@ -88,7 +86,7 @@ const blackDog = {
             of showing up again and making a mess of the trash - an all-too-common occurrence. The animals disappear 
             around a corner, and your body relaxes, no longer prepared to flee.
         `,
-        sanity: -45,
+        sanity: 10,
         evidence: 0
     }, {
         id: 'call',
@@ -103,8 +101,8 @@ const blackDog = {
             and before you can run, the dog has disappeared. The image is blurred, but the photo is enough for
             you to believe what you saw.
         `,
-        sanity: 0,
-        evidence: 90
+        sanity: -15,
+        evidence: 20
     }]
 };
 
@@ -134,8 +132,8 @@ const doppelganger = {
        yourself, knowing they wouldn't believe you. You rush them down the driveway, and convince them to call
        the police. They find nothing. You must have had some weird dream falling asleep watching that show.
     `,
-        sanity: 0,
-        evidence: 40
+        sanity: -5,
+        evidence: 0
     }, {
         id: 'lock',
         description: 'Lock the door',
@@ -147,7 +145,7 @@ const doppelganger = {
                 shape and glowing eyes. As they move toward you, your vision blurs, and your breath leaves you like a 
                 punch to the stomach. Everything is black.
                 `,
-        sanity: -50,
+        sanity: -40,
         evidence: 0
     }, {
         id: 'upstairs',
@@ -160,8 +158,8 @@ const doppelganger = {
         slamming the front door shut behind you. You see an image of your parents shifting into looming black shadows.
         Your family will never forget those glowing vacant eyes.
         `,
-        sanity: 35,
-        evidence: 0
+        sanity: -5,
+        evidence: 10
     }]
 };
 

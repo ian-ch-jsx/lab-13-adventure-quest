@@ -9,8 +9,8 @@ export function findById(items, id){
 export function generateUser(formData){
     return {
         completed:{},
-        gold: 0,
-        hp: 15,
+        evidence: 0,
+        sanity: 40,
         name: formData.get('name'),
         class: formData.get('class')
     };
@@ -26,6 +26,6 @@ export function getUser(){
     return JSON.parse(userString);
 }
 
-export function scoreQuest(){
+// export function scoreQuest(){
     
-}
+// }

@@ -5,8 +5,8 @@ const test = QUnit.test;
 test('generateUser should return a userObject', (expect) => {
     const expected = {
         completed:{},
-        gold: 0,
-        hp: 15,
+        evidence: 0,
+        sanity: 40,
         name: 'Ian',
         class: 'ghost hunter',
     };
@@ -25,8 +25,8 @@ test('setUser should save user to localStorage', (expect)=>{
 
     const userObject = {
         completed:{},
-        gold: 0,
-        hp: 15,
+        evidence: 0,
+        sanity: 40,
         name: 'Ian',
         class: 'ghost hunter',
     };
