@@ -1,6 +1,6 @@
 import quests from '../data/quest-data.js';
 // import { loadProfile } from '../render-utils.js';
-import { findById, getUser } from '../utils.js';
+import { findById, getUser, scoreQuest, setUser } from '../utils.js';
 
 const params = new URLSearchParams(window.location.search);
 const questData = findById(quests, params.get('id'));
@@ -37,6 +37,10 @@ questChoices.addEventListener('submit', (e)=>{
 
     const SelectedRadio = document.querySelector('input[type="radio"]:checked');
     const choice = findById(questData.choices, SelectedRadio.value);
+
+    const user = getUser();
+    scoreQuest(choice, questData.id, user);
+    setUser(user);
 
     const questDetails = document.getElementById('quest-details');
     questDetails.classList.add('hidden');
