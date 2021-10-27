@@ -46,12 +46,13 @@
 ---
 ---
 
-### Points Break Down
-* ~~A user should be able to enter their name and pick a character~~
-* ~~A user's data should be stored in local storage and displayed on the page~~
-* ~~A user should be presented with a list of quests and links to each unique quest page~~
-* ~~A user should be able to visit a unique quest pages based on a URL query parameter~~
-* ~~A user should be presented with a list of options to pick from on the quest detail page~~
+## part 2
+* Handle form submit on quest page and update user object	
+* List Page handles completed tasks	
+* List Page detects end conditions and navigates to end page	
+* Evaluation of result	
+* End Page design and information display	
+
 
 ## part one
 * ~~Hosted on GitHub with URL in About section~~
@@ -62,10 +63,3 @@
 * ~~Quest Detail Page uses query id to load correct data~~
 * ~~Quest Detail Page: Shows quest information (images, description)~~
 * ~~Quest Detail Page: Presents Quest Choices~~
-
-## part 2
-* Handle form submit on quest page and update user object	
-* List Page handles completed tasks	
-* List Page detects end conditions and navigates to end page	
-* Evaluation of result	
-* End Page design and information display	
