@@ -1,0 +1,27 @@
+a:link {
+    font-family: 'raleway', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #BD2424;
+}
+
+a:visited {
+    font-family: 'raleway', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #781717;
+}
+
+a:hover {
+    font-family: 'raleway', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #839791;
+    font-weight: bold;
+}
+
+#map-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
