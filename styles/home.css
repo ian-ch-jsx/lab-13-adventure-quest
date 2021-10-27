@@ -3,6 +3,15 @@ body {
     background-color: #111111;
     color: #fefefe;
     font-family: 'raleway', sans-serif;
+    font-size: 1.2rem;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    /* text-transform: uppercase; */
+    letter-spacing: 5px;
+    color: #839791;
 }
 
 #home-container {
@@ -13,10 +22,11 @@ body {
 }
 
 input {
-    margin: 10px;
+    margin: 20px;
     border-radius: 15px;
     padding: 5px;
     border: 0px;
+    text-align:center;
 }
 
 button {
