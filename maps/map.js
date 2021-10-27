@@ -1,11 +1,15 @@
 import quests from '../data/quest-data.js';
-import { getUser } from '../utils.js';
+import { getUser, questsCompleted } from '../utils.js';
 import { loadProfile } from '../render-utils.js';
 
 const mapLinks = document.getElementById('map-links');
 const user = getUser();
 
 loadProfile();
+
+if (user.sanity <= 0 || questsCompleted(user)){
+    window.location.replace('../gameover');
+}
 
 for (let quest of quests){
     if (user.completed[quest.id]){
