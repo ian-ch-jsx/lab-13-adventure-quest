@@ -46,16 +46,20 @@ questChoices.addEventListener('submit', (e)=>{
     const resultsP = document.createElement('p');
     resultsP.textContent = choice.result;
 
-    const returnMapContainer = document.createElement('div');
-    returnMapContainer.classList.add('return-container');
-
-    const returnMapBtn = document.createElement('button');
-    returnMapBtn.textContent = 'continue';
-    returnMapBtn.classList.add('return-button');
-
     questResults.append(resultsP, returnMapContainer);
     returnMapContainer.append(returnMapBtn);
     questResults.classList.remove('hidden');
+});
+
+const returnMapContainer = document.createElement('div');
+returnMapContainer.classList.add('return-container');
+
+const returnMapBtn = document.createElement('button');
+returnMapBtn.textContent = 'continue';
+returnMapBtn.classList.add('return-button');
+
+returnMapBtn.addEventListener('click', ()=>{
+    window.location.replace('../map');
 });
 
 const userImage = document.getElementById('user-image');
