@@ -1,3 +1,5 @@
+import quests from './data/quest-data.js';
+
 export function findById(items, id){
     for (let item of items){
         if (item.id === id){
@@ -26,10 +28,17 @@ export function getUser(){
     return JSON.parse(userString);
 }
 
- 
+export function scoreQuest(choiceObject, questId, userObject){
+    userObject.sanity += choiceObject.sanity;
+    userObject.evidence += choiceObject.evidence;
+    userObject.completed[questId] = true;
+}
 
-// export function scoreQuest(choiceObject, questId, userObject){
-//     userObject.sanity += choiceObject.sanity;
-//     userObject.evidence += choiceObject.evidence;
-//     userObject.completed(questId) = true;
-// }
+export function questsCompleted(userObject){
+    for (let quest of quests){
+        if (!userObject.completed[quest.id]) {
+            return false;
+        } 
+    } 
+    return true;
+}

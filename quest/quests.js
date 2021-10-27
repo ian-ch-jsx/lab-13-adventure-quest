@@ -1,15 +1,16 @@
 import quests from '../data/quest-data.js';
-import { findById, getUser } from '../utils.js';
+import { findById, getUser, scoreQuest, setUser } from '../utils.js';
+import { loadProfile } from '../render-utils.js';
 
 const params = new URLSearchParams(window.location.search);
 const questData = findById(quests, params.get('id'));
 
+loadProfile();
+
 const title = document.getElementById('quest-title');
 title.textContent = questData.title;
-
 const img = document.getElementById('quest-image');
 img.src = `../assets/${questData.image}`;
-
 const description = document.getElementById('quest-description');
 description.textContent = questData.description;
 
@@ -39,6 +40,10 @@ questChoices.addEventListener('submit', (e)=>{
     const SelectedRadio = document.querySelector('input[type="radio"]:checked');
     const choice = findById(questData.choices, SelectedRadio.value);
 
+    const user = getUser();
+    scoreQuest(choice, questData.id, user);
+    setUser(user);
+
     const questDetails = document.getElementById('quest-details');
     questDetails.classList.add('hidden');
 
@@ -61,15 +66,3 @@ returnMapBtn.classList.add('return-button');
 returnMapBtn.addEventListener('click', ()=>{
     window.location.replace('../map');
 });
-
-const userImage = document.getElementById('user-image');
-userImage.src = `../assets/${getUser().class}.png`;
-
-const userName = document.getElementById('user-name');
-userName.textContent = 'Name: ' + getUser().name;
-
-const userSanity = document.getElementById('user-sanity');
-userSanity.textContent = 'Sanity: ' + getUser().sanity;
-
-const userEvidence = document.getElementById('user-evidence');
-userEvidence.textContent = 'Evidence: ' + getUser().evidence;
