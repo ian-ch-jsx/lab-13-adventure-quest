@@ -1,17 +1,15 @@
 import { getUser } from './utils.js';
 
 export function loadProfile() {
-    const user = getUser();
-
-    const img = document.getElementById('user-image');
-    img.src = `../assets/${user.class}.png`;
-
-    const name = document.getElementById('name');
-    name.textContent = 'Name: ' + user.name;
-
-    const sanity = document.getElementById('user-sanity');
-    sanity.textContent = 'Sanity: ' + user.sanity;
-
-    const evidence = document.getElementById('user-evidence');
-    evidence.textContent = 'Evidence: ' + user.evidence;
+    const userImage = document.getElementById('user-image');
+    userImage.src = `../assets/${getUser().class}.png`;
+    
+    const userName = document.getElementById('user-name');
+    userName.textContent = 'Name: ' + getUser().name;
+    
+    const userSanity = document.getElementById('user-sanity');
+    userSanity.textContent = 'Sanity: ' + getUser().sanity;
+    
+    const userEvidence = document.getElementById('user-evidence');
+    userEvidence.textContent = 'Evidence: ' + getUser().evidence;
 }

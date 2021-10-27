@@ -1,22 +1,12 @@
 // import quest data
 import quests from '../data/quest-data.js';
 import { getUser } from '../utils.js';
-
-const userImage = document.getElementById('user-image');
-userImage.src = `../assets/${getUser().class}.png`;
-
-const userName = document.getElementById('user-name');
-userName.textContent = 'Name: ' + getUser().name;
-
-const userSanity = document.getElementById('user-sanity');
-userSanity.textContent = 'Sanity: ' + getUser().sanity;
-
-const userEvidence = document.getElementById('user-evidence');
-userEvidence.textContent = 'Evidence: ' + getUser().evidence;
+import { loadProfile } from '../render-utils.js';
 
 const mapLinks = document.getElementById('map-links');
-
 const user = getUser();
+
+loadProfile();
 
 for (let quest of quests){
     if (user.completed[quest.id]){
