@@ -15,3 +15,13 @@ for (let quest of quests){
 
 const userImage = document.getElementById('user-image');
 userImage.src = `../assets/${getUser().class}.png`;
+
+const userName = document.getElementById('user-name');
+userName.textContent = 'Name: ' + getUser().name;
+console.log(getUser());
+
+const userSanity = document.getElementById('user-sanity');
+userSanity.textContent = 'Sanity: ' + getUser().sanity;
+
+const userEvidence = document.getElementById('user-evidence');
+userEvidence.textContent = 'Evidence: ' + getUser().evidence;
