@@ -64,5 +64,5 @@ returnMapBtn.textContent = 'continue';
 returnMapBtn.classList.add('return-button');
 
 returnMapBtn.addEventListener('click', ()=>{
-    window.location.replace('../map');
+    window.location.replace('../maps');
 });
