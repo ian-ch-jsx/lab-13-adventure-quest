@@ -43,3 +43,24 @@ button {
 legend {
     margin: 20px;
 }
+
+#user-icon {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+#user-image {
+    width: 100px;
+    height: 100px;
+}
+#user-stats {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 20px;
+}
+
+p#user-name, p#user-sanity, p#user-evidence {
+    margin: 0px;
+}
