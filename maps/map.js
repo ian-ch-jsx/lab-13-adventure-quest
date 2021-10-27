@@ -28,6 +28,7 @@ function displayLink(quest){
 
 function displaySpan(quest){
     const span = document.createElement('span');
-    span.textContent = quest.title + ': completed';
+    span.textContent = quest.title;
+    span.classList.add('completed-quest');
     mapLinks.appendChild(span);
 }

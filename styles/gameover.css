@@ -12,3 +12,10 @@
     text-align: center;
 }
 
+#final-icon {
+    display: flex;
+    margin: auto;
+    width: 130px;
+    height: 130px;
+    padding: 10px;
+}

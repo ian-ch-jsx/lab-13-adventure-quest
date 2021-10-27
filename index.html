@@ -27,24 +27,24 @@
                 <input type="text" id="name" name="name">
             </label>
             <legend>CHOOSE YOUR CLASS</legend>
-            <p id="avatars">
-                <label class="options-display">
-                    <input type="radio" name="class" class="main" required value="skeptic">
-                    <img src="./assets/skeptic.png" class="user-image"><br>
-                    The Skeptic
-                </label>
-                <label class="options-display">
-                    <input type="radio" name="class" class="main" required value="zoologist">
-                    <img src="./assets/zoologist.png" class="user-image"> <br>
-                    The Cryptozoologist
-                </label>
-                <label class="options-display">
-                    <input type="radio" name="class" class="main" required value="empath">
-                    <img src="./assets/empath.png" class="user-image">
-                    <br>The Empath
-                </label>
-            </p>
-            <button id="submit">start your adventure</button>
+                <div id="options-container">
+                    <label class="options-display">
+                        <input type="radio" name="class" class="main" required value="skeptic">
+                                <img src="./assets/skeptic.png" class="user-image">
+                            The Skeptic
+                    </label>
+                    <label class="options-display">
+                        <input type="radio" name="class" class="main" required value="zoologist">
+                                <img src="./assets/zoologist.png" class="user-image">
+                            The Cryptozoologist
+                    </label>
+                    <label class="options-display">
+                        <input type="radio" name="class" class="main" required value="empath">
+                                <img src="./assets/empath.png" class="user-image">
+                            The Empath
+                    </label>
+                </div>
+                <button id="submit">start your adventure</button>
         </form>
     </div>
     <script type="module" src="./app.js"></script>
