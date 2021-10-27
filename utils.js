@@ -26,10 +26,8 @@ export function getUser(){
     return JSON.parse(userString);
 }
 
- 
-
-// export function scoreQuest(choiceObject, questId, userObject){
-//     userObject.sanity += choiceObject.sanity;
-//     userObject.evidence += choiceObject.evidence;
-//     userObject.completed(questId) = true;
-// }
+export function scoreQuest(choiceObject, questId, userObject){
+    userObject.sanity += choiceObject.sanity;
+    userObject.evidence += choiceObject.evidence;
+    userObject.completed[questId] = true;
+}

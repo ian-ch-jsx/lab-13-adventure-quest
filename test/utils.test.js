@@ -1,4 +1,4 @@
-import { generateUser, setUser, getUser } from '../utils.js';
+import { generateUser, setUser, getUser, scoreQuest } from '../utils.js';
 
 const test = QUnit.test;
 
@@ -55,23 +55,37 @@ test('getUser should retrieve user info from localStorage', (expect)=>{
 
     expect.deepEqual(userObject, actual);
 });
-// test('scoreQuest should update sanity, evidence, and completed on the userObject', (expect)=>{
-//     const userObject = {
-//         completed:{},
-//         gold: 0,
-//         hp: 15,
-//         name: 'Ian',
-//         class: 'ghost hunter',
-//     };
 
-//         const choiceObject 
-//         //from quests
+test('scoreQuest should update sanity, evidence, and completed quests on userObject', (expect)=>{
+    const userObject = {
+        completed:{},
+        evidence: 0,
+        sanity: 40,
+        name: 'Ian',
+        class: 'ghost hunter',
+    };
 
-//     const questID = 'dragon';
+    const choiceObject = {
+        id: 'approach',
+        description: 'Approach the horse',
+        result: `
+            You lock eyes with the horse, feeling strangely drawn to it. You slowly move forward,
+            stepping carefully across the rocky creek-side. As you raise your hand, the horse stretches
+            his neck forward, touching his nose to the back of your hand. When you brush your fingers 
+            through his long mane, the hair starts to slither forward like a snake, coiling up your arms
+            and wrapping around your body faster than you can think to scream. By the time you do, the 
+            sound is replaced with a choking gasp as you're dragged underwater with the beast, never to be
+            seen again.
+        `,
+        sanity: -40,
+        evidence: 0
+    };
 
-//     scoreQuest(choiceObject, questID, userObject);
+    const questId = 'waterHorse';
 
-//     expect.equal(userObject.hp, 0234234);
-//     expect.equal(userObject.gold 544234);
-//     expect.equal(userObject.completed[questID], true)
-// }
+    scoreQuest(choiceObject, questId, userObject);
+
+    expect.equal(userObject.sanity, 0);
+    expect.equal(userObject.evidence, 0);
+    expect.equal(userObject.completed[questId], true);
+});
