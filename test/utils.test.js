@@ -1,4 +1,4 @@
-import { generateUser, setUser, getUser, scoreQuest } from '../utils.js';
+import { generateUser, setUser, getUser, scoreQuest, questsCompleted } from '../utils.js';
 
 const test = QUnit.test;
 
@@ -88,4 +88,22 @@ test('scoreQuest should update sanity, evidence, and completed quests on userObj
     expect.equal(userObject.sanity, 0);
     expect.equal(userObject.evidence, 0);
     expect.equal(userObject.completed[questId], true);
+});
+
+test('questsCompleted returns true if the user has completed quests', (expect)=>{
+    const userObject = { 
+        completed: { waterHorse: true, blackDog: true, doppelganger: true },
+    };
+
+    const actual = questsCompleted(userObject);
+    expect.equal(actual, true);
+});
+
+test('questsCompleted returns false if the user has not completed quests', (expect)=>{
+    const userObject = { 
+        completed: { waterHorse: true, blackDog: true },
+    };
+
+    const actual = questsCompleted(userObject);
+    expect.equal(actual, false);
 });

@@ -107,7 +107,7 @@ const blackDog = {
 };
 
 const doppelganger = {
-    id: 'treasure',
+    id: 'doppelganger',
     title: `We've always been here`,
     map: {
         top: '31%',
