@@ -1,4 +1,5 @@
 import quests from '../data/quest-data.js';
+// import { loadProfile } from '../render-utils.js';
 import { findById, getUser } from '../utils.js';
 
 const params = new URLSearchParams(window.location.search);
@@ -6,6 +7,7 @@ const questData = findById(quests, params.get('id'));
 
 const title = document.getElementById('quest-title');
 title.textContent = questData.title;
+
 
 const img = document.getElementById('quest-image');
 img.src = `../assets/${questData.image}`;
@@ -61,6 +63,8 @@ returnMapBtn.classList.add('return-button');
 returnMapBtn.addEventListener('click', ()=>{
     window.location.replace('../map');
 });
+
+
 
 const userImage = document.getElementById('user-image');
 userImage.src = `../assets/${getUser().class}.png`;
