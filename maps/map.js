@@ -1,4 +1,3 @@
-// import quest data
 import quests from '../data/quest-data.js';
 import { getUser } from '../utils.js';
 import { loadProfile } from '../render-utils.js';
@@ -18,7 +17,7 @@ for (let quest of quests){
 
 function displayLink(quest){
     const a = document.createElement('a');
-    a.href = `../quests/?id=${quest.id}`;
+    a.href = `../quest/?id=${quest.id}`;
     a.textContent = quest.title;
     mapLinks.appendChild(a);
 }
