@@ -50,6 +50,7 @@ img#quest-image {
 
 .hidden{
     display: none;
+    background-color: #111111;
 }
 
 button {
@@ -60,4 +61,16 @@ button {
 button:hover {
     background-color: #781717;
     color: #fefefe;
+}
+
+.return-button {
+    background-color: #111111;
+    color: #fefefe;
+    font-weight: 100;
+}
+
+.return-container {
+    display:flex;
+    justify-content: center;
+    margin: auto;
 }

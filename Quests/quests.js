@@ -1,5 +1,5 @@
 import quests from '../data/quest-data.js';
-import { findById } from '../utils.js';
+import { findById, getUser } from '../utils.js';
 
 const params = new URLSearchParams(window.location.search);
 const questData = findById(quests, params.get('id'));
@@ -46,6 +46,26 @@ questChoices.addEventListener('submit', (e)=>{
     const resultsP = document.createElement('p');
     resultsP.textContent = choice.result;
 
-    questResults.append(resultsP);
+    const returnMapContainer = document.createElement('div');
+    returnMapContainer.classList.add('return-container');
+
+    const returnMapBtn = document.createElement('button');
+    returnMapBtn.textContent = 'continue';
+    returnMapBtn.classList.add('return-button');
+
+    questResults.append(resultsP, returnMapContainer);
+    returnMapContainer.append(returnMapBtn);
     questResults.classList.remove('hidden');
 });
+
+const userImage = document.getElementById('user-image');
+userImage.src = `../assets/${getUser().class}.png`;
+
+const userName = document.getElementById('user-name');
+userName.textContent = 'Name: ' + getUser().name;
+
+const userSanity = document.getElementById('user-sanity');
+userSanity.textContent = 'Sanity: ' + getUser().sanity;
+
+const userEvidence = document.getElementById('user-evidence');
+userEvidence.textContent = 'Evidence: ' + getUser().evidence;

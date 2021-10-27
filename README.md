@@ -48,7 +48,7 @@
 
 ### Points Break Down
 * ~~A user should be able to enter their name and pick a character~~
-* A user's data should be stored in local storage and displayed on the page
+* ~~A user's data should be stored in local storage and displayed on the page~~
 * ~~A user should be presented with a list of quests and links to each unique quest page~~
 * ~~A user should be able to visit a unique quest pages based on a URL query parameter~~
 * ~~A user should be presented with a list of options to pick from on the quest detail page~~
