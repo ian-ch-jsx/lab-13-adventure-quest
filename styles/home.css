@@ -9,7 +9,6 @@ body {
 header {
     display: flex;
     justify-content: center;
-    /* text-transform: uppercase; */
     letter-spacing: 5px;
     color: #839791;
 }

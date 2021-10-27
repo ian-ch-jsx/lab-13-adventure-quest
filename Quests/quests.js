@@ -30,7 +30,7 @@ for (let choice of questData.choices){
 }
 
 const button = document.createElement('button');
-button.textContent = 'choose';
+button.textContent = 'make your choice';
 questChoices.append(button);
 
 questChoices.addEventListener('submit', (e)=>{
