@@ -49,9 +49,9 @@
 ## part 2
 * ~~Handle form submit on quest page and update user object~~	
 * ~~List Page handles completed tasks~~
-* List Page detects end conditions and navigates to end page	
-* Evaluation of result	
-* End Page design and information display	
+* ~~List Page detects end conditions and navigates to end page~~	
+* ~~Evaluation of result~~
+* ~~End Page design and information display~~
 
 
 ## part one

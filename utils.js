@@ -12,7 +12,7 @@ export function generateUser(formData){
     return {
         completed:{},
         evidence: 0,
-        sanity: 40,
+        sanity: 50,
         name: formData.get('name'),
         class: formData.get('class')
     };
