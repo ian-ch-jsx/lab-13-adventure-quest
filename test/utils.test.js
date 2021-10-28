@@ -6,7 +6,7 @@ test('generateUser should return a userObject', (expect) => {
     const expected = {
         completed:{},
         evidence: 0,
-        sanity: 40,
+        sanity: 50,
         name: 'Ian',
         class: 'ghost hunter',
     };

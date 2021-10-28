@@ -22,13 +22,19 @@ for (let quest of quests){
 function displayLink(quest){
     const a = document.createElement('a');
     a.href = `../quest/?id=${quest.id}`;
-    a.textContent = quest.title;
+    a.textContent = quest.maptitle;
+    a.classList.add('quest-position');
+    a.style.top = quest.map.top;
+    a.style.left = quest.map.left;
     mapLinks.appendChild(a);
 }
 
 function displaySpan(quest){
     const span = document.createElement('span');
-    span.textContent = quest.title;
+    span.textContent = 'X' + quest.maptitle;
     span.classList.add('completed-quest');
+    span.classList.add('quest-position');
+    span.style.top = quest.map.top;
+    span.style.left = quest.map.left;
     mapLinks.appendChild(span);
 }

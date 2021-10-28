@@ -1,9 +1,10 @@
 const waterHorse = {
     id: 'waterHorse',
     title: 'Something in the water',
+    maptitle: 'creek horse',
     map: {
-        top: '89%',
-        left: '44%'
+        top: '64%',
+        left: '75%'
     },
     image: '../assets/waterhorse.jpg',
     description: `
@@ -26,7 +27,7 @@ const waterHorse = {
             sound is replaced with a choking gasp as you're dragged underwater with the beast, never to be
             seen again.
         `,
-        sanity: -40,
+        sanity: -50,
         evidence: 0
     }, {
         id: 'leave',
@@ -36,7 +37,7 @@ const waterHorse = {
             as though it was filled with moths. You start to walk away slowly, fighting the urge to sprint
             as long as you possibly can (it isn't long). You bolt down the trail and never look back.
         `,
-        sanity: 0,
+        sanity: -5,
         evidence: 0
     }, {
         id: 'photo',
@@ -55,9 +56,10 @@ const waterHorse = {
 const blackDog = {
     id: 'blackDog',
     title: 'The Black Dog',
+    maptitle: 'The Black Dog',
     map: {
-        top: '17%',
-        left: '37%'
+        top: '63%',
+        left: '42%'
     },
     image: '../assets/blackdog.jpg',
     description: `
@@ -75,7 +77,7 @@ const blackDog = {
             the dog is lunging straight towards you. His glowing white eyes and yellowed fangs, dripping with 
             frothy saliva, are the last things you see before it all goes dark.
         `,
-        sanity: -40,
+        sanity: -50,
         evidence: 0
     }, {
         id: 'observe',
@@ -102,21 +104,20 @@ const blackDog = {
             you to believe what you saw.
         `,
         sanity: -15,
-        evidence: 20
+        evidence: 1
     }]
 };
 
 const doppelganger = {
     id: 'doppelganger',
     title: `We've always been here`,
+    maptitle: 'doppelganger',
     map: {
-        top: '31%',
-        left: '5%'
+        top: '18%',
+        left: '8%'
     },
     prerequisites: ['dragon', 'monsters'],
     image: '../assets/doppelganger.jpg',
-    audio: 'treasure-chests.wav',
-    action: 'chest-opening.wav',
     description: `
         "Goodnight!" Your parents shut their bedroom door as you walk down the stairs and plop down on the
         couch, pressing the play button on your favorite Twilight Zone episode. When the episode ends, you 
@@ -145,7 +146,7 @@ const doppelganger = {
                 shape and glowing eyes. As they move toward you, your vision blurs, and your breath leaves you like a 
                 punch to the stomach. Everything is black.
                 `,
-        sanity: -40,
+        sanity: -50,
         evidence: 0
     }, {
         id: 'upstairs',
@@ -158,8 +159,8 @@ const doppelganger = {
         slamming the front door shut behind you. You see an image of your parents shifting into looming black shadows.
         Your family will never forget those glowing vacant eyes.
         `,
-        sanity: -5,
-        evidence: 10
+        sanity: -10,
+        evidence: 1
     }]
 };
 
